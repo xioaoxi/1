@@ -20,6 +20,7 @@ def align():
     result_as_dicts = [[seq.to_dict() for seq in pair]
                        for pair in alignment_results]
     return jsonify({"result": result_as_dicts})
+# nedd
 
 
 @app.route('/', endpoint='home')  # 显式指定端点名称
